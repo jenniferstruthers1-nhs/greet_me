@@ -1,7 +1,7 @@
 [project]
 authors = [{name = "Jennifer Struthers", email = "jennifer.struthers1@nhs.net"}]
-dependencies = ["requests>=2.32.5,<3"]
-name = "greet_me"
+dependencies = ["requests>=2.32.5,<3", "build>=1.4.0,<2", "twine>=6.2.0,<7"]
+name = "greet_me_js"
 requires-python = ">= 3.11"
 version = "0.1.0"
 
@@ -14,7 +14,7 @@ channels = ["conda-forge"]
 platforms = ["linux-64"]
 
 [tool.pixi.pypi-dependencies]
-greet_me = { path = ".", editable = true }
+greet_me_js = { path = ".", editable = true }
 
 [tool.pixi.tasks]
-start = "python -c 'from greet_me import happy; print(happy.greet_happy())'"
+start = "python -c 'from greet_me_js import happy; print(happy.greet_happy())'"

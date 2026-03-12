@@ -1,4 +1,4 @@
-# Greet me
+# Greet me JS
 
 Short project for learning Pixi.
 
